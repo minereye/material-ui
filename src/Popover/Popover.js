@@ -392,6 +392,8 @@ class Popover extends Component {
         newLeft = anchor[anchorPos.horizontal] - target[positions.x[1]];
         if (newLeft + target.right <= window.innerWidth) {
           targetPosition.left = Math.max(0, newLeft);
+        } else {
+          targetPosition.top = anchor.top - target[positions.y[0]] + anchor.height
         }
       }
     }
