@@ -234,7 +234,7 @@ var TextField = function (_Component) {
         hasValue: isValid(propsLeaf.value) || isValid(propsLeaf.defaultValue)
       });
 
-      process.env.NODE_ENV !== "production" ? (0, _warning2.default)(name || hintText || floatingLabelText || id, 'Material-UI: We don\'t have enough information\n      to build a robust unique id for the TextField component. Please provide an id or a name.') : void 0;
+      //process.env.NODE_ENV !== "production" ? (0, _warning2.default)(name || hintText || floatingLabelText || id, 'Material-UI: We don\'t have enough information\n      to build a robust unique id for the TextField component. Please provide an id or a name.') : void 0;
 
       var uniqueId = name + '-' + hintText + '-' + floatingLabelText + '-' + Math.floor(Math.random() * 0xFFFF);
       this.uniqueId = uniqueId.replace(/[^A-Za-z0-9-]/gi, '');
